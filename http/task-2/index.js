@@ -33,7 +33,7 @@ function requestHandler(req, res) {
   } else if (req.url === '/hello-world') {
     res.end('Hello World');
   } else {
-    res.end('Done')
+    res.end('Done');
   }
 }
 
