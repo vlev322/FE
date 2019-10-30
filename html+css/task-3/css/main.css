@@ -156,3 +156,11 @@ aside div img {
 .submit:hover {
     background-color: #0083CC;
 }
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
