@@ -1,0 +1,274 @@
+@font-face {
+	font-family: 'Ubuntu-Regular';
+	src: url('../fonts/Ubuntu-Regular.eot');
+	src: url('../fonts/Ubuntu-Regular.eot?iefix') format('eot'), url('../fonts/Ubuntu-Regular.woff') format('woff'), url('../fonts/Ubuntu-Regular.ttf') format('truetype'), url('../fonts/Ubuntu-Regular.svg#webfont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Ubuntu-Light';
+	src: url('../fonts/Ubuntu-Light.eot');
+	src: url('../fonts/Ubuntu-Light.eot?iefix') format('eot'), url('../fonts/Ubuntu-Light.woff') format('woff'), url('../fonts/Ubuntu-Light.ttf') format('truetype'), url('../fonts/Ubuntu-Light.svg#webfont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Ubuntu-Bold';
+	src: url('../fonts/Ubuntu-Bold.eot');
+	src: url('../fonts/Ubuntu-Bold.eot?iefix') format('eot'), url('../fonts/Ubuntu-Bold.woff') format('woff'), url('../fonts/Ubuntu-Bold.ttf') format('truetype'), url('../fonts/Ubuntu-Bold.svg#webfont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+body {
+	margin: 0;
+}
+
+html {
+	font-size: 10px;
+	-webkit-tap-highlight-color: transparent;
+	background-color: #FFE9B3;
+}
+
+body {
+	font-family: 'Ubuntu-Regular', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #282C34;
+	background-color: #fff;
+	max-width: 1200px;
+	margin: 0 auto;
+	border-radius: 15px;
+}
+
+input,
+button,
+select,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+a {
+	color: #337ab7;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus {
+	color: #23527c;
+	text-decoration: underline;
+}
+
+a:focus {
+	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: -2px;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+main,
+footer {
+	margin: 50px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+footer {
+	font-family: 'Ubuntu-Light';
+	font-size: 18px;
+}
+
+header {
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+}
+
+section {
+	display: flex;
+	align-items: center;
+}
+
+.form {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.broadcrambs {
+	display: flex;
+	list-style-type: none;
+}
+
+.broadcrambs li {
+	background-color: #56b6c2;
+	height: 30px;
+	width: 90px;
+	margin: 0 15px;
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	cursor: pointer;
+	-webkit-transition: all .9s, -webkit-transform .9s;
+	transition: all .9s, transform .9s;
+}
+
+.broadcrambs li::after {
+	content: '\27AB';
+	right: -25px;
+	position: absolute;
+	color: #000;
+	font-size: 25px;
+	cursor: auto;
+}
+
+.broadcrambs li:hover {
+	background-color: #282C83;
+	border-radius: 10px;
+
+}
+
+.broadcrambs li:last-child::after {
+	content: none;
+}
+
+.broadcrambs li:last-child {
+	background-color: #282C83;
+	border-radius: 10px;
+}
+
+/*Styling chekbox*/
+.checkbox,
+.trigger,
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+	position: absolute;
+	left: -9999px;
+}
+
+[type="radio"]:checked+label,
+[type="radio"]:not(:checked)+label {
+	position: relative;
+	padding-left: 28px;
+	cursor: pointer;
+	line-height: 20px;
+	display: inline-block;
+	color: #282C34;
+}
+
+[type="radio"]:checked+label:before,
+[type="radio"]:not(:checked)+label:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 18px;
+	height: 18px;
+	border: 1px solid #282C34;
+	border-radius: 100%;
+	background: #fff;
+}
+
+[type="radio"]:checked+label:after,
+[type="radio"]:not(:checked)+label:after {
+	content: '';
+	width: 12px;
+	height: 12px;
+	background: #7E3BBC;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	border-radius: 100%;
+	-webkit-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+[type="radio"]:not(:checked)+label:after {
+	opacity: 0;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+}
+
+[type="radio"]:checked+label:after {
+	opacity: 1;
+	-webkit-transform: scale(.7);
+	transform: scale(.7);
+}
+
+/*
+	Switch for iphone
+*/
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+}
+
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+input:checked+.slider {
+	background-color: #79D376;
+}
+
+input:focus+.slider {
+	box-shadow: 0 0 1px #79D376;
+}
+
+input:checked+.slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+.slider {
+	border-radius: 34px;
+}
+
+.slider:before {
+	border-radius: 50%;
+}
