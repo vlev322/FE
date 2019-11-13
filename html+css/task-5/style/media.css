@@ -1,0 +1,17 @@
+@media (min-width: 320px) and (max-width: 480px) {
+  .navigation {
+    display: none;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .navigation {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1920px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
