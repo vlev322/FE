@@ -1,0 +1,163 @@
+@import "modules/typography.css";
+
+h1 {
+	font-size: 50px;
+	font-weight: normal;
+	cursor: pointer;
+	text-shadow: -1px -1px #000, 0 1px 0 #444;
+	color: #fff;
+	transition: all 1s;
+}
+
+h1:hover {
+	color: #1a1a1a;
+}
+
+h2 {
+	font-size: 50px;
+	font-weight: normal;
+	cursor: pointer;
+	text-shadow: 0 0 10px #999;
+	color: transparent;
+	transition: all 0.8s;
+	border-bottom: 2px solid rgb(161, 158, 158);
+}
+
+h2:hover {
+	color: #ffffff;
+	text-shadow: 0 0 0px #fff;
+	cursor: pointer;
+}
+
+p {
+	font-size: 18px;
+}
+
+body {
+	padding: 80px;
+	width: 70%;
+	max-width: 55em;
+	font: 95%/1.5 sans-serif;
+	font-family: "Ubuntu-Regular";
+	color: #ffffff;
+	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url("../img/space.jpg");
+	background-size: cover;
+	position: relative;
+	margin: 0 auto;
+}
+
+body:after,
+body:before {
+	position: fixed;
+	content: "";
+	display: block;
+	top: 0;
+	left: -8px;
+	width: 5%;
+	height: 100%;
+	background: repeating-linear-gradient(
+		90deg,
+		#fdf6e6 0,
+		#fdf6e6 20px,
+		#cfdbc7 20px,
+		#cfdbc7 40px,
+		#dfa798 40px,
+		#dfa798 70px,
+		#fbc9b2 70px,
+		#fbc9b2 100px
+	);
+	box-shadow: inset 0 -12px 24px #000;
+}
+
+body:after {
+	right: -8px;
+	left: auto;
+	background: repeating-linear-gradient(
+		60deg,
+		#e7f0ed 0px,
+		#e7f0ed 15px,
+		#d8bbb5 15px,
+		#d8bbb5 25px,
+		#d1afa6 25px,
+		#d1afa6 35px,
+		#f1b6a8 35px,
+		#f1b6a8 45px,
+		#ffefd7 45px,
+		#ffefd7 55px
+	);
+}
+
+nav > ul {
+	height: 400px;
+	width: 300px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	transform: rotate(-90deg);
+	transform-origin: center top;
+	transition: all 0.4s ease-in;
+}
+
+nav ul > li {
+	height: 115px;
+	width: 100px;
+	padding: 15px;
+	transform: rotate(110deg);
+	transform-origin: center top;
+	transition: all 0.4s ease-in;
+}
+
+nav ul {
+	padding: 3%;
+}
+
+nav li,
+nav h2 {
+	font-size: 90%;
+	margin-bottom: 10px;
+}
+
+nav h2,
+nav a {
+	transition: all 0.4s ease-in;
+	color: #fff;
+}
+
+nav a:first-child {
+	color: #333;
+	display: block;
+	background: #fff;
+	border-radius: 3px;
+	padding: 2px 5px;
+	font-weight: 700;
+}
+
+nav a:first-child:hover {
+	background: #dfa798;
+	color: #fff;
+	transform: scale(1.5) rotate(-20deg);
+	width: 100%;
+	word-wrap: normal;
+}
+
+nav a:last-child {
+	font-style: 19px;
+}
+
+nav a:last-child:before {
+	content: "via ";
+	display: inline;
+	font-weight: 600;
+	font-size: 18px;
+	color: #dfa798;
+}
+
+a:hover,
+a {
+	color: #081319;
+}
+
+footer {
+	border-top: 1px solid #aaa;
+	text-align: center;
+	font-size: 85%;
+}
