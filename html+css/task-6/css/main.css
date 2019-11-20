@@ -172,7 +172,8 @@ body {
 .cart footer .colors div:first-child i {
 	color: #e1674d;
 }
-.cart footer .colors div:first-child:hover {
+.cart footer .colors div:first-child:hover::before {
+	content: '';
 	border: 1px solid #e1674d;
 }
 .cart footer .colors div:last-child i {
