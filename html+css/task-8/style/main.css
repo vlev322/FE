@@ -1,0 +1,150 @@
+body {
+  margin: 10px auto;
+  min-width: 768px;
+  width: 992px;
+  background-color: #222222; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+.game {
+  height: 600px;
+  padding: 0 160px;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("../img/back-big.png");
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .game-playground, .game-items {
+    width: 339px;
+    height: 436px;
+    margin-top: -50px;
+    position: relative; }
+  .game-playground {
+    background-image: url("../img/bg_item.png"); }
+  .game-items {
+    background-image: url("../img/bg_item-right.png"); }
+
+.game, .game-playground, .game-items {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.input-block {
+  position: absolute;
+  top: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  left: 82px; }
+  .input-block input {
+    background: #000;
+    color: #ffffff; }
+    .input-block input-:first-child {
+      margin-bottom: 3px; }
+
+.container-items {
+  position: absolute;
+  width: 290px;
+  height: 290px;
+  background: antiquewhite;
+  bottom: 59px;
+  left: 24px; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+  width: 290px; }
+
+.description {
+  display: none;
+  position: absolute;
+  color: #ffffff;
+  font-style: italic;
+  background-color: #898989;
+  left: 0;
+  bottom: -150px;
+  z-index: 1;
+  width: 150px;
+  padding: 0;
+  margin: 0; }
+
+.grid-item {
+  outline: 1px solid #ffffff;
+  background-image: url("../img/bg_item.jpg");
+  width: 29px;
+  height: 29px;
+  position: relative; }
+  .grid-item:hover .description {
+    display: block; }
+
+.item-belt, .item-ruby-green, .item-stone-time, .item-pear, .item-eyes, .item-fire, .item-branch, .item-ring, .item-ruby-yellow, .item-ruby-red, .item-ruby-blue, .item-book-blue {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center; }
+.item-book-blue {
+  background-image: url("../img/book_blue.jpg"); }
+.item-ruby-green {
+  background-image: url("../img/green.jpg"); }
+.item-belt {
+  background-image: url("../img/belt.png"); }
+.item-stone-time {
+  background-image: url("../img/runa-time.png"); }
+.item-pear {
+  background-image: url("../img/runa-pear.png"); }
+.item-eyes {
+  background-image: url("../img/runa-fire.png"); }
+.item-fire {
+  background-image: url("../img/grey-1.jpg"); }
+.item-branch {
+  background-image: url("../img/runa-branch.png"); }
+.item-ruby-yellow {
+  background-image: url("../img/yellow.jpg"); }
+.item-ring {
+  background-image: url("../img/gold-ring.png"); }
+.item-ruby-red {
+  background-image: url("../img/red.jpg"); }
+.item-ruby-blue {
+  background-image: url("../img/blue.jpg"); }
+
+.game-items {
+  position: relative; }
+  .game-items-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative; }
+    .game-items-top-trigger .btns > div {
+      margin-left: 20px;
+      top: 0; }
+    .game-items-top-trigger .btns div p {
+      background: #313131;
+      cursor: pointer;
+      width: 20px;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .game-items-top-trigger .btns div p img {
+        height: 120px; }
+    .game-items-top-trigger .btns div:last-child p {
+      margin-left: 50px; }
+    .game-items-top-trigger .btns div:first-child p {
+      margin-left: 10px; }
+    .game-items-top-trigger .bottom-elem {
+      margin-left: 20px;
+      height: 60px;
+      width: 60px;
+      background-image: url("../img/gloves.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center; }
+
+/*# sourceMappingURL=main.css.map */

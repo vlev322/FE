@@ -1,0 +1,141 @@
+body
+  margin: 10px auto
+  min-width: 768px
+  width: 992px
+  background-color: #222222
+p
+  margin: 0
+  padding: 0
+.game
+  height: 600px
+  padding: 0 160px
+  width: auto
+  display: flex
+  background-image: url('../img/back-big.png')
+  align-items: center
+  &-playground, &-items
+    width: 339px
+    height: 436px
+    margin-top: -50px
+    position: relative
+  &-playground
+    background-image: url('../img/bg_item.png')
+  &-items
+    background-image: url('../img/bg_item-right.png')
+.game, .game-playground, .game-items
+  background-size: contain
+  background-repeat: no-repeat
+  background-position: center center
+.input-block
+  position: absolute
+  top: 27px
+  display: flex
+  flex-direction: column
+  left: 82px
+  input
+    background: #000
+    color: #ffffff
+    &-:first-child
+      margin-bottom: 3px
+.container-items
+  position: absolute
+  width: 290px
+  height: 290px
+  background: antiquewhite
+  bottom: 59px
+  left: 24px
+.grid-container
+  display: grid
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto
+  width: 290px
+
+.description
+  display: none
+  position: absolute
+  color: #ffffff
+  font-style: italic
+  background-color: #898989
+  left: 0
+  bottom: -150px
+  z-index: 1
+  width: 150px
+  p
+  padding: 0
+  margin: 0
+
+.grid-item
+  outline: 1px solid #ffffff
+  background-image: url('../img/bg_item.jpg')
+  width: 29px
+  height: 29px
+  position: relative
+  &:hover .description
+    display: block
+
+.item
+  &-belt,&-ruby-green,
+  &-stone-time, &-pear,
+  &-eyes,&-fire,&-branch,
+  &-ring, &-ruby-yellow,
+  &-ruby-red, &-ruby-blue,
+  &-book-blue
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center center
+  &-book-blue
+    background-image: url('../img/book_blue.jpg')
+  &-ruby-green
+    background-image: url('../img/green.jpg')
+  &-belt
+    background-image: url('../img/belt.png')
+  &-stone-time
+    background-image: url('../img/runa-time.png')
+  &-pear
+    background-image: url('../img/runa-pear.png')
+  &-eyes
+    background-image: url('../img/runa-fire.png')
+  &-fire
+    background-image: url('../img/grey-1.jpg')
+  &-branch
+    background-image: url('../img/runa-branch.png')
+  &-ruby-yellow
+    background-image: url('../img/yellow.jpg')
+  &-ring
+    background-image: url('../img/gold-ring.png')
+  &-ruby-red
+    background-image: url('../img/red.jpg')
+  &-ruby-blue
+    background-image: url('../img/blue.jpg')
+
+.game-items
+  position: relative
+  &-top
+    display: flex
+    position: relative
+    &-trigger
+      .btns
+        > div
+          // position: absolute
+          margin-left: 20px
+          top: 0
+        div p
+          background: #313131
+          cursor: pointer
+          width: 20px
+          align-items: center
+          img
+            height: 120px
+        div:last-child p
+          margin-left: 50px
+        div:first-child p
+          margin-left: 10px
+      .bottom-elem
+        margin-left: 20px
+        height: 60px
+        width: 60px
+        background-image: url('../img/gloves.png')
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center center
+
+
