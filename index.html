@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Summary file</title>
+</head>
+
+<body>
+    <main>
+    </main>
+    <script>
+        "use strict"
+        const mainTitles = ['html+css', 'js', 'http'],
+            quantityTasks = [8, 2, 2],
+            root = document.getElementsByTagName('main')[0];
+        for (let i = 0; i < mainTitles.length; i++) {
+            let h2 = document.createElement('h2'),
+                ul = document.createElement('ul'),
+                title = mainTitles[i],
+                nameTitle = document.createTextNode(title);
+
+            h2.appendChild(nameTitle);
+            root.appendChild(h2);
+            root.appendChild(ul);
+            for (let j = 1; j <= quantityTasks[i]; j++) {
+                let nameTask = document.createTextNode(`Task-${j}`),
+                    a = document.createElement('a'),
+                    li = document.createElement('li');
+
+                a.appendChild(nameTask);
+                a.setAttribute('href', `FE/${title}/task-${j}/index.html`);
+                a.setAttribute('target', `_blank`);
+                li.appendChild(a);
+                ul.appendChild(li);
+            }
+        }
+    </script>
+</body>
+
+</html>
