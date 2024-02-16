@@ -1,0 +1,9 @@
+@import "./main.css";
+
+::-webkit-scrollbar {
+	width: 0px;
+	background: transparent;
+}
+::-webkit-scrollbar-thumb {
+	background: #ff0000;
+}

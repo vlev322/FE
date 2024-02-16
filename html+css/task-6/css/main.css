@@ -1,0 +1,212 @@
+@font-face {
+	font-family: "Ubuntu-Regular";
+	src: url("../fonts/Ubuntu-Regular.eot");
+	src: url("../fonts/Ubuntu-Regular.eot?iefix") format("eot"), url("../fonts/Ubuntu-Regular.woff") format("woff"),
+		url("../fonts/Ubuntu-Regular.ttf") format("truetype"), url("../fonts/Ubuntu-Regular.svg#webfont") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Ubuntu-Light";
+	src: url("../fonts/Ubuntu-Light.eot");
+	src: url("../fonts/Ubuntu-Light.eot?iefix") format("eot"), url("../fonts/Ubuntu-Light.woff") format("woff"),
+		url("../fonts/Ubuntu-Light.ttf") format("truetype"), url("../fonts/Ubuntu-Light.svg#webfont") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Ubuntu-Bold";
+	src: url("../fonts/Ubuntu-Bold.eot");
+	src: url("../fonts/Ubuntu-Bold.eot?iefix") format("eot"), url("../fonts/Ubuntu-Bold.woff") format("woff"),
+		url("../fonts/Ubuntu-Bold.ttf") format("truetype"), url("../fonts/Ubuntu-Bold.svg#webfont") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+html {
+	max-width: 1980px;
+	font-family: "Ubuntu-Regular", sans-serif;
+	background-color: #353535;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+h3 {
+	font-size: 12px;
+	font-family: "Ubuntu-Bold";
+	letter-spacing: 0;
+	margin: 10px 0;
+}
+h4 {
+	font-size: 10px;
+	font-family: "Ubuntu-Light";
+	margin-top: 5px;
+}
+
+body {
+	margin: 50px 150px;
+}
+
+.cart {
+	width: 275px;
+	height: 500px;
+	background-color: #fff;
+	border-radius: 25px;
+	box-sizing: border-box;
+	position: relative;
+	-webkit-box-shadow: -10px 10px 10px 5px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: -10px 10px 10px 5px rgba(0, 0, 0, 0.75);
+	box-shadow: -10px 10px 10px 5px rgba(0, 0, 0, 0.75);
+}
+.cart header {
+	height: 50%;
+	color: #ffffff;
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
+	padding: 20px;
+	padding-top: 10px;
+	background: rgb(230, 124, 68);
+	background: linear-gradient(90deg, rgba(230, 124, 68, 1) 0%, rgba(201, 80, 59, 1) 47%);
+}
+.cart header p {
+	font-size: 14px;
+}
+.cart header .shoes {
+	position: absolute;
+	right: -100px;
+	top: 70px;
+	z-index: 1;
+}
+.cart header span {
+	color: #282c34;
+	text-transform: uppercase;
+	font-size: 115px;
+	font-family: "Ubuntu-Bold", sans-serif;
+	opacity: 0.2;
+	position: absolute;
+	top: 32%;
+	left: -4%;
+}
+.cart-description {
+	width: 200px;
+}
+
+.cart footer {
+	background-color: #fff;
+	border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 25px;
+	padding: 20px;
+	position: relative;
+}
+.cart footer .title {
+	position: relative;
+	width: 70%;
+}
+.cart footer .title h2 {
+	font-size: 16px;
+}
+.cart footer .title .vobler {
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 11px;
+	font-family: "Ubuntu-Light";
+	padding: 3px;
+	width: 27px;
+	border-radius: 5px;
+	background-color: #6de470;
+	position: absolute;
+	right: 0;
+	top: -15px;
+}
+.cart footer .rate {
+	padding: 3px 0;
+	font-size: 12px;
+}
+.cart footer .rate i:hover {
+	color: #c9503b;
+	cursor: pointer;
+}
+.cart footer .sizes {
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+}
+.cart footer .sizes span {
+	height: 20px;
+	width: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 12px;
+}
+.cart footer .sizes span:hover {
+	border-radius: 50%;
+	background-color: #e36747;
+	cursor: pointer;
+	color: #ffffff;
+}
+.color {
+	width: 40%;
+}
+.cart footer .colors {
+	display: flex;
+	justify-content: space-between;
+	height: 25px;
+}
+.cart footer .colors > div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 3px;
+	border-radius: 50%;
+}
+.cart footer .colors div:first-child i {
+	color: #e1674d;
+}
+.cart footer .colors div:first-child:hover::before {
+	content: '';
+	border: 1px solid #e1674d;
+}
+.cart footer .colors div:last-child i {
+	color: #6ae56e;
+}
+.cart footer .colors div:last-child:hover {
+	border: 1px solid #6ae56e;
+}
+.cart footer .colors div i {
+	color: #f8d448;
+}
+.cart footer .colors div:hover {
+	border: 1px solid #f8d448;
+}
+.cart footer .price {
+	background-color: #6de470;
+	color: #fff;
+	border-radius: 5px;
+	padding: 5px 15px;
+	position: absolute;
+	right: -10px;
+	bottom: 20px;
+	-webkit-box-shadow: 0px 12px 25px -10px rgba(109,228,112,0.75);
+	-moz-box-shadow: 0px 12px 25px -10px rgba(109,228,112,0.75);
+	box-shadow: 0px 12px 25px -10px rgba(109,228,112,0.75);
+}
+.cart footer .price span:first-child {
+	text-transform: uppercase;
+	font-size: 22px;
+	font-family: "Ubuntu-Light";
+}
+.cart footer .price span:last-child {
+	text-transform: uppercase;
+	font-size: 22px;
+	font-family: "Ubuntu-Bold";
+}
